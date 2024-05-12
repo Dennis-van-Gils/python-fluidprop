@@ -118,7 +118,9 @@ Example output::
         Thermal exp. coeff.    | alpha   = 2.068e-04   1/K
         Thermal diffusivity    | kappa   = 1.432e-07   m^2/s
         Thermal conductivity   | lambda_ = 5.980e-01   W/(m K)
-        Isobaric heat capacity | Cp      = 4.184e+03   J/(kg K)
+        Isobaric  heat capac.  | Cp      = 4.184e+03   J/(kg K)
+        Isochoric heat capac.  | Cv      = 4.157e+03   J/(kg K)
+        Isothermal compress.   | comp    = 4.589e-10   1/Pa
         Prandtl                | Pr      = 7.008
     ------------------------------------------------------------
 
@@ -182,6 +184,10 @@ List of stored properties::
 
     Cp      (ndarray): Isobaric heat capacity         [J/(kg K)]
 
+    Cv      (ndarray): Isochoric heat capacity        [J/(kg K)]
+
+    comp    (ndarray): Isothermal compressibility     [1/Pa]
+
     Pr      (ndarray): Prandtl number                 [-]
 
-Dennis van Gils, 11-05-2024
+Dennis van Gils, 12-05-2024

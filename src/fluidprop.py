@@ -12,8 +12,8 @@ Thermodynamic properties are provided by CoolProp:
 __author__ = "Dennis van Gils"
 __authoremail__ = "vangils.dennis@gmail.com"
 __url__ = "https://github.com/Dennis-van-Gils/python-fluidprop"
-__date__ = "11-05-2024"
-__version__ = "1.0.0"
+__date__ = "12-05-2024"
+__version__ = "1.1.0"
 
 import re
 from typing import Union
@@ -122,6 +122,12 @@ class FluidProperties:
         Cp (`numpy.ndarray[]`):
             Isobaric heat capacity [J/(kg K)].
 
+        Cv (`numpy.ndarray[]`):
+            Isochoric heat capacity [J/(kg K)].
+
+        comp (`numpy.ndarray[]`):
+            Isothermal compressibility [1/Pa].
+
         Pr (`numpy.ndarray[]`):
             Prandtl number.
     """
@@ -207,6 +213,12 @@ class FluidProperties:
         self.Cp: npt.NDArray[np.float64] = np.copy(nan_array)
         """Isobaric heat capacity [J/(kg K)]"""
 
+        self.Cv: npt.NDArray[np.float64] = np.copy(nan_array)
+        """Isochoric heat capacity [J/(kg K)]"""
+
+        self.comp: npt.NDArray[np.float64] = np.copy(nan_array)
+        """Isothermal compressibility [1/Pa]"""
+
         self.Pr: npt.NDArray[np.float64] = np.copy(nan_array)
         """Prandtl number"""
 
@@ -235,6 +247,8 @@ class FluidProperties:
             "ISOBARIC_EXPANSION_COEFFICIENT",
             "CONDUCTIVITY",
             "CPMASS",
+            "CVMASS",
+            "ISOTHERMAL_COMPRESSIBILITY",
             "PRANDTL",
         ]
 
@@ -258,6 +272,8 @@ class FluidProperties:
                 self.alpha[idx_],   # Thermal expansion coefficient [1/K]
                 self.lambda_[idx_], # Thermal conductivity          [W/(m K)]
                 self.Cp[idx_],      # Isobaric heat capacity        [J/(kg K)]
+                self.Cv[idx_],      # Isochoric heat capacity       [J/(kg K)]
+                self.comp[idx_],    # Isothermal compressibility    [1/Pa]
                 self.Pr[idx_],      # Prandtl number                [-]
             ) = values
             # fmt: on
@@ -292,7 +308,9 @@ class FluidProperties:
         pprint("Thermal exp. coeff."   , "alpha"  , self.alpha[0]  , "1/K")
         pprint("Thermal diffusivity"   , "kappa"  , self.kappa[0]  , "m^2/s")
         pprint("Thermal conductivity"  , "lambda_", self.lambda_[0], "W/(m K)")
-        pprint("Isobaric heat capacity", "Cp"     , self.Cp[0]     , "J/(kg K)")
+        pprint("Isobaric  heat capac." , "Cp"     , self.Cp[0]     , "J/(kg K)")
+        pprint("Isochoric heat capac." , "Cv"     , self.Cv[0]     , "J/(kg K)")
+        pprint("Isothermal compress. " , "comp"   , self.comp[0]   , "1/Pa")
         pprint("Prandtl"               , "Pr"     , self.Pr[0]     ,
                format_spec="f")
         # fmt: on
