@@ -31,8 +31,8 @@ EOS models
 ----------
 
 Thermodynamic properties are provided by CoolProp, the open-source alternative
-to `NIST refprop <https://www.nist.gov/srd/refprop>`_, with most of the calculations relying on the same
-equation-of-state (EOS) models as refprop.
+to `NIST refprop <https://www.nist.gov/srd/refprop>`_, with most of the
+calculations relying on the same equation-of-state (EOS) models as refprop.
 
 * http://www.coolprop.org/
 * http://pubs.acs.org/doi/abs/10.1021/ie4033999
@@ -52,7 +52,14 @@ It will show a minimal command-line interface which guides the user to enter a
 fluid, temperature and pressure. It will print out its thermodynamic properties
 as a table to the terminal.
 
-Example output::
+BONUS for the Rayleigh-Bénard convection community. Running::
+
+    python -m rbc
+
+will show a command-line interface acting as a 'pocket calculator' to calculate
+the Rayleigh and other numbers based on the user input.
+
+Example output of `fluidprop`::
 
     https://github.com/Dennis-van-Gils/python-fluidprop
     Thermodynamic properties by CoolProp v6.6.0
@@ -190,4 +197,4 @@ List of stored properties::
 
     Pr      (ndarray): Prandtl number                 [-]
 
-Dennis van Gils, 12-05-2024
+Dennis van Gils, 13-05-2024

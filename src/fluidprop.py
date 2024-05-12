@@ -12,8 +12,8 @@ Thermodynamic properties are provided by CoolProp:
 __author__ = "Dennis van Gils"
 __authoremail__ = "vangils.dennis@gmail.com"
 __url__ = "https://github.com/Dennis-van-Gils/python-fluidprop"
-__date__ = "12-05-2024"
-__version__ = "1.1.0"
+__date__ = "13-05-2024"
+__version__ = "1.2.0"
 
 import re
 from typing import Union
@@ -364,10 +364,17 @@ def utf8_subscripts(text: str) -> str:
 
 
 # ------------------------------------------------------------------------------
-#   main
+#   show_cli
 # ------------------------------------------------------------------------------
 
-if __name__ == "__main__":
+
+def show_cli() -> FluidProperties:
+    """Show a minimal command-line interface which guides the user to enter a
+    fluid, temperature and pressure.
+
+    Returns:
+        The resulting `FluidProperties()` class instance.
+    """
     print(__url__)
     print(f"Thermodynamic properties by CoolProp v{CoolProp.__version__}")
     print("http://pubs.acs.org/doi/abs/10.1021/ie4033999")
@@ -509,15 +516,18 @@ if __name__ == "__main__":
         # Made it successfully till the end
         break
 
-    # ----------------------------------
-    #   Calculate and report to screen
-    # ----------------------------------
-
-    fluid = FluidProperties(
+    return FluidProperties(
         coolprop_name=fluid_name,
         T_in_deg_C=temperature_deg_C,
         P_in_bar=pressure_bar,
     )
 
+
+# ------------------------------------------------------------------------------
+#   main
+# ------------------------------------------------------------------------------
+
+if __name__ == "__main__":
+    fluid = show_cli()
     print()
     fluid.report()
