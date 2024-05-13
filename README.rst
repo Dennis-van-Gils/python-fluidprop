@@ -142,7 +142,7 @@ Example output of `fluidprop`::
 When asked to enter the temperature in ``['C]``, you can *once* enter a single
 character instead to change the input unit to::
 
-    k | [K]     Kelvin                  K + 273.15 'C
+    k | [K]     Kelvin                  K - 273.15 'C
     f | ['F]    Degrees Fahrenheit      ('F - 32) * 5 / 9 'C
 
 When asked to enter the pressure in ``[bar]``, you can *once* enter a single
