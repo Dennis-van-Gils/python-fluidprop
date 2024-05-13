@@ -27,6 +27,14 @@ or if you're on macOS or Linux, try::
 
     pip3 install fluidprop
 
+Raison d'être
+-------------
+
+Science advances every year and with it the accuracy of tabulated/parametrized
+fluid properties. Don't reinvent the wheel by coding your own equation-of-state
+models from the literature. Or copy-pasting possibly outdated values from the
+internet.
+
 EOS models
 ----------
 
