@@ -6,11 +6,12 @@ with a minimal command-line interface for quick inspection.
 Provides classes ``RBC_cell()`` and ``RBC()`` useful for working out dataseries
 on Rayleigh-Bénard Convection in your own scripts.
 """
+
 __author__ = "Dennis van Gils"
 __authoremail__ = "vangils.dennis@gmail.com"
 __url__ = "https://github.com/Dennis-van-Gils/python-fluidprop"
-__date__ = "13-05-2024"
-__version__ = "1.2.0"
+__date__ = "10-08-2026"
+__version__ = "1.3.0"
 
 from typing import Union
 

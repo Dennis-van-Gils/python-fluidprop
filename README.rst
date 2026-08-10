@@ -74,47 +74,52 @@ Example output of `fluidprop`::
     http://pubs.acs.org/doi/abs/10.1021/ie4033999
 
     All known fluids:
-        0 | 1-Butene             41 | MD4M                 82 | R1233zd(E)
-        1 | Acetone              42 | MDM                  83 | R1234yf
-        2 | Air                  43 | Methane              84 | R1234ze(E)
-        3 | Ammonia              44 | Methanol             85 | R1234ze(Z)
-        4 | Argon                45 | MethylLinoleate      86 | R124
-        5 | Benzene              46 | MethylLinolenate     87 | R1243zf
-        6 | CarbonDioxide        47 | MethylOleate         88 | R125
-        7 | CarbonMonoxide       48 | MethylPalmitate      89 | R13
-        8 | CarbonylSulfide      49 | MethylStearate       90 | R134a
-        9 | cis-2-Butene         50 | MM                   91 | R13I1
-       10 | CycloHexane          51 | n-Butane             92 | R14
-       11 | Cyclopentane         52 | n-Decane             93 | R141b
-       12 | CycloPropane         53 | n-Dodecane           94 | R142b
-       13 | D4                   54 | n-Heptane            95 | R143a
-       14 | D5                   55 | n-Hexane             96 | R152A
-       15 | D6                   56 | n-Nonane             97 | R161
-       16 | Deuterium            57 | n-Octane             98 | R21
-       17 | Dichloroethane       58 | n-Pentane            99 | R218
-       18 | DiethylEther         59 | n-Propane           100 | R22
-       19 | DimethylCarbonate    60 | n-Undecane          101 | R227EA
-       20 | DimethylEther        61 | Neon                102 | R23
-       21 | Ethane               62 | Neopentane          103 | R236EA
-       22 | Ethanol              63 | Nitrogen            104 | R236FA
-       23 | EthylBenzene         64 | NitrousOxide        105 | R245ca
-       24 | Ethylene             65 | Novec649            106 | R245fa
-       25 | EthyleneOxide        66 | o-Xylene            107 | R32
-       26 | Fluorine             67 | OrthoDeuterium      108 | R365MFC
-       27 | HeavyWater           68 | OrthoHydrogen       109 | R40
-       28 | Helium               69 | Oxygen              110 | R404A
-       29 | HFE143m              70 | p-Xylene            111 | R407C
-       30 | Hydrogen             71 | ParaDeuterium       112 | R41
-       31 | HydrogenChloride     72 | ParaHydrogen        113 | R410A
-       32 | HydrogenSulfide      73 | Propylene           114 | R507A
-       33 | IsoButane            74 | Propyne             115 | RC318
-       34 | IsoButene            75 | R11                 116 | SES36
-       35 | Isohexane            76 | R113                117 | SulfurDioxide
-       36 | Isopentane           77 | R114                118 | SulfurHexafluoride
-       37 | Krypton              78 | R115                119 | Toluene
-       38 | m-Xylene             79 | R116                120 | trans-2-Butene
-       39 | MD2M                 80 | R12                 121 | Water
-       40 | MD3M                 81 | R123                122 | Xenon
+        0 | 1-Butene             46 | MethylLinoleate      92 | R1234yf
+        1 | Acetone              47 | MethylLinolenate     93 | R1234ze(E)
+        2 | Air                  48 | MethylOleate         94 | R1234ze(Z)
+        3 | Ammonia              49 | MethylPalmitate      95 | R124
+        4 | Argon                50 | MethylStearate       96 | R1243zf
+        5 | Benzene              51 | MM                   97 | R125
+        6 | CarbonDioxide        52 | n-Butane             98 | R13
+        7 | CarbonMonoxide       53 | n-Decane             99 | R1336mzz(E)
+        8 | CarbonylSulfide      54 | n-Dodecane          100 | R1336mzz(Z)
+        9 | Chlorine             55 | n-Heptane           101 | R134a
+       10 | cis-2-Butene         56 | n-Hexane            102 | R13I1
+       11 | CycloHexane          57 | n-Nonane            103 | R14
+       12 | Cyclopentane         58 | n-Octane            104 | R141b
+       13 | CycloPropane         59 | n-Pentane           105 | R142b
+       14 | D4                   60 | n-Perfluorobutane   106 | R143a
+       15 | D5                   61 | n-Perfluorohexane   107 | R152A
+       16 | D6                   62 | n-Perfluoropentane  108 | R161
+       17 | Deuterium            63 | n-Propane           109 | R21
+       18 | Dichloroethane       64 | n-Undecane          110 | R218
+       19 | DiethylEther         65 | Neon                111 | R22
+       20 | DimethylCarbonate    66 | Neopentane          112 | R227EA
+       21 | DimethylEther        67 | Nitrogen            113 | R23
+       22 | Ethane               68 | NitrousOxide        114 | R236EA
+       23 | Ethanol              69 | Novec649            115 | R236FA
+       24 | EthylBenzene         70 | o-Xylene            116 | R245ca
+       25 | Ethylene             71 | OrthoDeuterium      117 | R245fa
+       26 | EthyleneOxide        72 | OrthoHydrogen       118 | R32
+       27 | Fluorine             73 | Oxygen              119 | R365MFC
+       28 | HeavyWater           74 | p-Xylene            120 | R40
+       29 | Helium               75 | ParaDeuterium       121 | R404A
+       30 | HFE143m              76 | ParaHydrogen        122 | R407C
+       31 | Hydrogen             77 | Propylene           123 | R41
+       32 | HydrogenChloride     78 | PropyleneGlycol     124 | R410A
+       33 | HydrogenSulfide      79 | Propyne             125 | R507A
+       34 | IsoButane            80 | R11                 126 | RC318
+       35 | IsoButene            81 | R1123               127 | SES36
+       36 | Isohexane            82 | R113                128 | SulfurDioxide
+       37 | Isopentane           83 | R1130(E)            129 | SulfurHexafluoride
+       38 | Krypton              84 | R1132(E)            130 | Tetrahydrofuran
+       39 | m-Xylene             85 | R114                131 | Toluene
+       40 | MD2M                 86 | R115                132 | trans-2-Butene
+       41 | MD3M                 87 | R116                133 | VinylChloride
+       42 | MD4M                 88 | R12                 134 | Water
+       43 | MDM                  89 | R1224YDZ            135 | Xenon
+       44 | Methane              90 | R123
+       45 | Methanol             91 | R1233zd(E)
 
     Enter fluid number: 121
     Enter temperature | T ['C]  : 20
@@ -205,4 +210,4 @@ List of stored properties::
 
     Pr      (ndarray): Prandtl number                 [-]
 
-Dennis van Gils, 13-05-2024
+Dennis van Gils, 10-08-2026

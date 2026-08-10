@@ -9,11 +9,12 @@ Thermodynamic properties are provided by CoolProp:
 * http://www.coolprop.org/
 * http://pubs.acs.org/doi/abs/10.1021/ie4033999
 """
+
 __author__ = "Dennis van Gils"
 __authoremail__ = "vangils.dennis@gmail.com"
 __url__ = "https://github.com/Dennis-van-Gils/python-fluidprop"
-__date__ = "13-05-2024"
-__version__ = "1.2.0"
+__date__ = "10-08-2026"
+__version__ = "1.3.0"
 
 import re
 from typing import Union
@@ -22,7 +23,6 @@ import numpy.typing as npt
 import numpy as np
 import CoolProp
 import CoolProp.CoolProp as CP
-
 
 ZERO_C = 273.15
 """0 'C in K"""

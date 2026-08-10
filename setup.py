@@ -25,7 +25,7 @@ def read(*names, **kwargs):
 setup(
     name="fluidprop",
     license="MIT",
-    version="1.2.0",
+    version="1.3.0",
     description="Easy access to thermodynamic fluid properties as a function of temperature and pressure. With a minimal command-line interface.",
     long_description="%s\n%s"
     % (
@@ -55,6 +55,8 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
         "Topic :: Utilities",
     ],
     project_urls={
@@ -66,6 +68,6 @@ setup(
         "thermodynamic",
     ],
     python_requires=">=3.9",
-    install_requires=["CoolProp~=6.6", "numpy~=1.25"],
+    install_requires=["CoolProp~=8.0"],
     extras_require={},
 )

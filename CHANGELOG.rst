@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.3.0 (2026-08-10)
+------------------
+* Bumped `CoolProp` package dependency from ~=6.6 to ~=8.0.
+
 1.2.0 (2024-05-13)
 ------------------
 * Added ``rbc.py``: A quick 'pocket calculator' for Rayleigh-Bénard Convection.
